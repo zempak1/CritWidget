@@ -1,0 +1,2 @@
+# CritWidget
+ESO addon
