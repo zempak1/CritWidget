@@ -3,7 +3,7 @@
 ## Description: Weapon / Spell Crit chance tracker
 ## Version: 1.0.0
 ## AddOnVersion: 111
-## Author: |c00a313Ghostbane, @Zempak|r
+## Author: |c00a313@Zempak|r
 ## SavedVariables: CritWidgetSettings
 ## DependsOn: LibAddonMenu-2.0>=32
 ## OptionalDependsOn: APMeter

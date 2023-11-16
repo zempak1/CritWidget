@@ -41,35 +41,6 @@ CW.defaults_db = {
 }
 
 local currentCritLevel = 0
-local inspirationalBanter = {
-    'You really need to think that you are good at this.',
-    'Honestly, if you were any slower, you’d be going backward.',
-    'Amassing a 24 man group will increase your survivability.',
-    'Impen is kind of important, but so is being good.',
-    'Have you tried PVE?',
-    'Consider the mongoose, would they have put up a fight like this? Get back in there champ, and keep the claws up.',
-    'Wow. We are actually speechless.',
-    'Have you tried actually trying?',
-    'Have you tried resetting your router?',
-    'Next time, stick them with the pointy end.',
-    'Impen really really really really helps.',
-    'Next time, don’t make insulting yo moma emotes, it just angers them.',
-    'Actually having damage.',
-    'Lift with your legs, not your back.',
-    'If there are two coconuts, and you take one away, the remaining coconut would still last longer than you did.',
-    'Equip more Earthgores.',
-    'Search for tutorials on YouTube, you may just get a tiny bit better.',
-    'If you happened to be streaming on Twitch during this, it is all kind of funny if you think about it.',
-    'You should listen to encouraging music when fighting, like Bon Jovi.',
-    'Hold block a bit more.',
-    'If only you had gotten that other Artifact',
-    'Stop trying and join the Greybeards',
-    'Maybe Crafting Writs are more your level',
-    'The objective is to stay alive',
-    'Have you considered doing normal level dungeons instead?',
-	'Oops, you died so fast - I didn\'t have time to generate tips',
-	'You could make a TikTok out of that and get some feedback'
-}
 
 function CW.SaveLocation()
 	local critwidgetUIControl = CW.UI.control
@@ -222,18 +193,6 @@ local function GS_Initialize()
 
 	critwidgetUIControl:ClearAnchors()
     critwidgetUIControl:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, dbLocation.x, dbLocation.y)
-
-    if not hasAPM then
-	    EVENT_MANAGER:RegisterForEvent(addon_name, EVENT_PLAYER_DEAD, function()
-	        if IsInCampaign() or IsActiveWorldBattleground() then
-	            zo_callLater(function()
-	                local text = inspirationalBanter[math.random(#inspirationalBanter)]
-	                ZO_DeathRecapScrollContainerScrollChildHintsContainerHints1Text:SetText(text)
-	            end,3000)
-	        end
-
-	    end)
-    end
 
     local fragment = ZO_HUDFadeSceneFragment:New(critwidgetUIControl, nil, 0)
 	HUD_SCENE:AddFragment(fragment)
