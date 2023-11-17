@@ -13,7 +13,7 @@ local function buildLAMSettingsMenu()
 		 type = "panel",
 		 name = "CritWidget",
 		 version = "1.0.0",
-		 author = '|c00a313@Zempak|r',
+		 author = '|c00a313Ghostbane, @Zempak|r',
 		 --website = 'https://www.esoui.com/downloads/info1924-GreyskullWeaponSpellDamageMeter.html'
 	}
 

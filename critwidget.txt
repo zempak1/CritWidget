@@ -1,9 +1,9 @@
 ## Title: CritWidget
 ## APIVersion: 101039
-## Description: Weapon / Spell Crit chance tracker
+## Description: Weapon / Spell Crit chance tracker. Based on addon "Greyskull : Weapon / Spell Damage Meter" by author ghostbane - Premission to copy it was granted.
 ## Version: 1.0.0
 ## AddOnVersion: 111
-## Author: |c00a313@Zempak|r
+## Author: |c00a313Ghostbane, @Zempak|r
 ## SavedVariables: CritWidgetSettings
 ## DependsOn: LibAddonMenu-2.0>=32
 ## OptionalDependsOn: APMeter
